@@ -36,12 +36,12 @@ h1 {
     list-style: none;
 }
 
-li {
+.menu li {
     text-align: center;
     display: inline-block;
 }
 
-li a {
+.menu li a {
     text-decoration: none;
     padding: 4px 70px;
     border: solid;
@@ -81,13 +81,50 @@ main {
 }
 .info {
     text-align: center;
-
+    border-bottom: solid 2px;
 }
 
 .info h3 {
     font-size: 200%;
     margin-top: 2rem;
-    border-bottom: solid 2px;
+    margin-bottom: 2rem;
+}
+
+.enter_name {
+    margin-top: 2rem;
+    
+}
+
+.call_to_action .enter_name input {
+    width: 90%;
+    height: 5rem;
+    text-align: center;
+    font-size: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-left: 2rem;
+}
+
+.enter_email {
+    margin-top: 2rem
+}
+
+.call_to_action .enter_email input {
+    width: 90%;
+    height: 5rem;
+    text-align: center;
+    font-size: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-left: 2rem;
+}
+
+.call_to_action a {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    padding: 10rem 3rem;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
 }
 
 .film {
