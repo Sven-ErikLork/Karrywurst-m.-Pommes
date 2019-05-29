@@ -39,12 +39,10 @@ li {
 
 li a {
     text-decoration: none;
-    padding: 4px 30px;
+    padding: 4px 70px;
     border: solid;
+    color: black;
 }
-
-
-
 
 aside {
     width: 1500px;
