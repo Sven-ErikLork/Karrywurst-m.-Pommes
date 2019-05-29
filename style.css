@@ -7,6 +7,11 @@ body {
     margin-left: 200px;
     margin-right: 200px;
 }
+
+/*///////////////////////////////////////////////
+Header
+///////////////////////////////////////////////*/
+
 header {
     display: grid;
     grid-template-columns: 5vw 1fr 1fr;
@@ -23,7 +28,6 @@ h1 {
 .logo {
     height: 4vw;
 }
-
 
 .menu {
     display: grid;
@@ -44,6 +48,10 @@ li a {
     color: black;
 }
 
+/*///////////////////////////////////////////////
+aside + slider
+///////////////////////////////////////////////*/
+
 aside {
     width: 1500px;
     height: 25vw;
@@ -55,6 +63,10 @@ aside {
     height: 25vw;
     object-fit: cover;   
 }
+
+/*///////////////////////////////////////////////
+main
+///////////////////////////////////////////////*/
 
 main {
     display: grid;
@@ -92,6 +104,9 @@ main {
     margin-right: auto; 
 }
 
+/*///////////////////////////////////////////////
+footer
+///////////////////////////////////////////////*/
 footer {
     margin-top: 10px;
     color: aliceblue;
