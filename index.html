@@ -25,19 +25,21 @@
     </aside>
     <main>
         <section class="video">
-        <img src="nedtur8.jpg" alt="Spiller" class="film">
+        <img src="comp1.gif" alt="Spiller" class="film">
         </section>
         <section class="call_to_action">
             <article class="info">
                 <h3>Tilmeld dig til en prøvetræning her</h3>
             </article>
-            <article class="enter_name">
-                <input type="text" placeholder="Tilføj dit navn her" id="item">
-            </article>
-            <article class="enter_email">
-                <input type="text" placeholder="Tilføj din E-Mail addresse her" id="item">
-            </article>
-            <a href="">Klik her for at tilmelde dig</a>
+            <form name="login" onSubmit="return validation()">
+                <article class="enter_name">
+                    <input type="text" placeholder="Tilføj dit navn her" name="navn">
+                </article>
+                <article class="enter_email">
+                    <input type="email" placeholder="Tilføj din E-Mail addresse her" name="email">
+                </article>
+                <input class="button" type="submit" name="btn" value="Klik her for at tilmelde dig">
+            </form>
         </section>
         <img src="træner1.jpg" alt="Træner" class="articlefoto">
         <article class="info"> 
