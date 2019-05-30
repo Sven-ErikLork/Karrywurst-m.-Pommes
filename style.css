@@ -6,7 +6,7 @@
 body {
     margin-left: 10%;
     margin-right: 10%;
-  
+    background-color: rgb(216, 214, 84);
     
 }
 
@@ -34,19 +34,19 @@ h1 {
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 3rem;
+    margin-top: 2rem;
     list-style: none;
-    max-width: 100%;
+    width: 100%;
 }
 
 .menu li {
-    text-align: center;
+    text-align: right;
     display: inline-block;
 }
 
 .menu li a {
+    padding: 0.5vh 3.5vh;
     text-decoration: none;
-    padding: 0.3rem 5rem;
     border: solid;
     color: black;
 }
@@ -86,14 +86,14 @@ Call to action
     margin-top: 10px;
     border: solid 2px;
     margin-left: 7px;
-    margin-right: 2px;
-    width: 100%;
+    grid-row: 1;
+    background-color: rgb(71, 202, 132);
 }
 .info {
-    grid-column: 1/13;
+grid-column: span 12;
     text-align: center;
     border-bottom: solid 2px;
-    height: 2vh;
+    height: 10vh;
 }
 
 .info h3 {
@@ -102,19 +102,20 @@ Call to action
     margin-bottom: 2rem;
 }
 
+form {
+    grid-column: 2/12;
+}
 .enter_name {
     margin-top: 2rem;
     
 }
 
 .call_to_action .enter_name input {
-    grid-column: 2/12;
-    width: 90%;
-
+    width: 100%;
+    height: 4vh;
     text-align: center;
     font-size: 120%;
     background: rgba(255, 255, 255, 0.2);
-    margin-left: 2rem;
 }
 
 .enter_email {
@@ -122,28 +123,25 @@ Call to action
 }
 
 .call_to_action .enter_email input {
-    grid-column: 2/12;
-    width: 90%;
-
+    width: 100%;
+    height: 4vh;
     text-align: center;
     font-size: 120%;
     background: rgba(255, 255, 255, 0.2);
-    margin-left: 2rem;
 }
 
 .call_to_action .button {
-    grid-column: 2/12;
-    margin-top: 2.5rem;
-    margin-left: 2rem;
-
+    margin-top: 2rem;
     text-align: center;
+    width: 100%;
+    height: 5vh;
     font-size: 120%;
     text-decoration: none;
     color: black;
     background-color: red;
     border: solid;
     border-color: black;
-}
+} 
 
 /*///////////////////////////////////////////////
 vigtige ord
@@ -153,6 +151,8 @@ vigtige ord
     grid-template-columns: 1fr 1fr 1fr;
     border: solid 2px;
     margin-top: 10px;
+    grid-row: 2;
+    background-color: rgb(71, 202, 132);
 }
 
 .glade {
@@ -163,14 +163,14 @@ vigtige ord
 .glade p {
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     margin-top: 1%;
 }
 
 .glade img {
     border-radius: 50%;
-    width: 50%;
-    height: 50%;
+    height: 10vh;
+    max-width: 10vh;
 
 }
 
@@ -182,15 +182,14 @@ vigtige ord
 .sammenhold p {
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
     margin-top: 1%;
 }
 
 .sammenhold img {
-    width: 50%;
     border-radius: 50%;
-    height: 50%;
-
+    height: 10vh;
+    max-width: 10vh;
 }
 
 .felleskab {
@@ -201,26 +200,85 @@ vigtige ord
 .felleskab p {
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
     margin-top: 1%;
 }
 
 .felleskab img {
-    width: 50%;
     border-radius: 50%;
-    height: 50%;
+    height: 10vh;
+    max-width: 10vh;
+}
 
+
+/*///////////////////////////////////////////////
+interview
+///////////////////////////////////////////////*/
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    border: solid 2px;
+    margin-left: 7px;
+    grid-row: 2;
+    background-color: rgb(71, 202, 132);
+}
+
+.information img {
+    height: 25vh;
+    border-radius: 20%;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+
+.komentar {
+    margin-top: 2vh;
+}
+/*///////////////////////////////////////////////
+map
+///////////////////////////////////////////////*/
+
+.map {
+    width: 100%;
+    height: 40vh;
+    background-color: grey;
+    margin-bottom: 2vh;
+    
+}
+
+.map p {
+    text-align:right; 
+    margin:0px; 
+    padding-top:-10px; 
+    line-height:10px;
+    font-size:10px;
+    margin-top: -25px;
 }
 
 /*///////////////////////////////////////////////
 footer
 ///////////////////////////////////////////////*/
 footer {
-    margin-top: 10px;
-    color: aliceblue;
-    background-color: black;
+    margin-top: 2vh;
+
 }
 
+
+.add_some {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid 2px;
+    background-color: rgb(71, 202, 132);
+}
+
+.add_some a{
+    text-align: right;
+    margin-right: 0.5vh;
+    margin-top: 0.5vh;
+}
+.add_some a img {
+    width: 6.5vh;
+}
 
 /*///////////////////////////////////////////////
 Slideshow
@@ -234,8 +292,13 @@ Slideshow
     max-width: 1000px;
     position: relative;
     border: solid 2px;
+    grid-row: 1;
+    background-color: rgb(71, 202, 132);
   }
   
+.alignment {
+    text-align:center;
+}
   /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;

@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
 </head>
+
 <!--https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <body>
@@ -23,10 +25,10 @@
         </nav>
     </Header>
     <aside class="slideshow">
-        <a href="#artikel"><img class="slider" src="artikel.jpg" alt="Artikel"></a>
-        <a href="#blanket"> <img class="slider" src="tilmeld.jpg" alt="Tilmelding"> </a>
-        <a href="#galleri"> <img class="slider" src="galleri.jpg" alt="Galleri"></a>
-    </aside>
+            <a href="#artikel"><img class="slider" src="artikel.jpg" alt="Artikel"></a>
+            <a href="#blanket"> <img class="slider" src="tilmeld.jpg" alt="Tilmelding"> </a>
+            <a href="#galleri"> <img class="slider" src="galleri.jpg" alt="Galleri"></a>
+        </aside>
     <main>
         <section class="video" id="galleri">
             <!--https://www.w3schools.com/howto/howto_js_slideshow.asp-->
@@ -48,7 +50,7 @@
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 
-                <article>
+                <article class="alignment">
                   <span class="dot" onclick="currentSlide(1)"></span> 
                   <span class="dot" onclick="currentSlide(2)"></span> 
                   <span class="dot" onclick="currentSlide(3)"></span> 
@@ -67,35 +69,50 @@
                 </article>
                 <input class="button" type="submit" name="btn" value="Klik her for at tilmelde dig">
             </form>
-        </section>
+        </section> 
         <section class="vigtige_ord">
             <article class="glade">
-                <img src="" alt="">
+                <img src="jubel3.jpg" alt="">
                 <h4>Glæde</h4>
+                <p>Vær med til at have og skabe glæde blandt alle spillere. Du er med til at skæbe glæden på og vedsiden af pladsen!</p>
             </article>
             <article class="sammenhold">
+                <img src="sejr5.jpg" alt="">
                 <h4>Sammenhold</h4>
+                <p>Noget af det vigtigste for os er sammenhold, på tværs af alle seniorhold. Man kender og respekterer hinanden lige meget hvilket hold man spiller på</p>
             </article>
             <article class="felleskab">
+                <img src="sejr.jpg" alt="">
                 <h4>Fællesskab</h4>
+                <p>Det er bare vigtigt for os at man føler man er del af en stor familie. Vi vil gerne at man ikke kun i senior holdet er en familie men også med de fans der kommer!</p>
             </article>
         </section>
-        <article class="info" id="artikel" > 
-            <h3> Coach Martin "Egen UI er meget mere end bare fodbold</h3>
-            <p>Her skal der være en artikle om Martin og hans syn på klubben. 
-                Vi skriver om hans vision og meget mere. <h2>" Egen UI er en social forening "</h2>
+        <article class="information" id="artikel"> 
+            <img src="træner1.jpg" alt="">
+            <article class="komentar">
+            <h2> Coach Martin "Egen UI er meget mere end bare fodbold</h2>
+            <p>Her kan man blive inspireret til at blive medlem af klubben.
+            <h3>" Egen UI er en social forening "</h3>
                 Her kan man blive inspireret til at blive medlem af klubben.
                 Det bliver en god læsnning for alle</p>
+            </article>
         </article>
     </main>
     <footer>
-        <address>
-            Egen Ungdoms- og idrætsforening <br>
-            Gl Guderup 1 <br>
-            6430 Nordborg <br>
-            tlf: 12345678 <br>
-        </address>
+        <!--https://www.checkpoll.de/google-maps-generator/google-maps-einbinden-html.html-->
+        <section class="map"><iframe width="100%" height="40vh" src=https://maps.google.de/maps?hl=de&q=EUI+Arena%20%20gammel+guderup+31%20nordborg&t=&z=14&ie=utf8&iwloc=b&output=embed frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style='height:40vh;width:100%;'></iframe><a href="http://www.checkpoll.de/google-maps-generator/" style="font-size:10px;" target="_blank">Google Maps Generator</a> fra <a href="https://www.on-projects.de/" style="font-size:10px;" title="Webdesign in Stuttgart" target="_blank">on-projects</a></p></section>
+
+
+        <article class="add_some"> 
+            <address>
+                Egen Ungdoms- og idrætsforening <br>
+                Gammel Guderup 31 <br>
+                6430 Nordborg <br>
+                tlf: 12345678 <br>
+            </address>
+            <a href="https://www.facebook.com/EgenUI/?epa=SEARCH_BOX"><img src="facebook.png" alt=""></a>
+        </article>
     </footer>
-    <script src="java.js"></script>
+    <script src="javascript.js"></script>
 </body>
 </html>
