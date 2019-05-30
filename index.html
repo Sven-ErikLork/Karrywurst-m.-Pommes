@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<!--https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <body>
     <Header>
         <img class="logo" src="egen ui.png" alt="logo">
@@ -20,11 +22,13 @@
             </ul>
         </nav>
     </Header>
-    <aside>
-        <img class="slider" src="fællesskab1.jpg" alt="holdfoto">
+    <aside class="slideshow">
+        <a href="#artikel"><img class="slider" src="artikel.jpg" alt="Artikel"></a>
+        <a href="#blanket"> <img class="slider" src="tilmeld.jpg" alt="Tilmelding"> </a>
+        <a href="#galleri"> <img class="slider" src="galleri.jpg" alt="Galleri"></a>
     </aside>
     <main>
-        <section class="video">
+        <section class="video" id="galleri">
             <!--https://www.w3schools.com/howto/howto_js_slideshow.asp-->
                 <article class="billeder fade">
                   <article class="numbertext">1 / 3</article>
@@ -44,7 +48,7 @@
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 
-                <article style="text-align:center">
+                <article>
                   <span class="dot" onclick="currentSlide(1)"></span> 
                   <span class="dot" onclick="currentSlide(2)"></span> 
                   <span class="dot" onclick="currentSlide(3)"></span> 
@@ -76,7 +80,7 @@
                 <h4>Fællesskab</h4>
             </article>
         </section>
-        <article class="info"> 
+        <article class="info" id="artikel" > 
             <h3> Coach Martin "Egen UI er meget mere end bare fodbold</h3>
             <p>Her skal der være en artikle om Martin og hans syn på klubben. 
                 Vi skriver om hans vision og meget mere. <h2>" Egen UI er en social forening "</h2>
