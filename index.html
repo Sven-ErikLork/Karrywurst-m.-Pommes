@@ -25,9 +25,32 @@
     </aside>
     <main>
         <section class="video">
-        <img src="comp1.gif" alt="Spiller" class="film">
+            <!--https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+                <article class="billeder fade">
+                  <article class="numbertext">1 / 3</article>
+                  <img src="slider/to.jpg">
+                </article>
+                
+                <article class="billeder fade">
+                  <article class="numbertext">2 / 3</article>
+                  <img src="slider/et.jpg">
+                </article>
+                
+                <article class="billeder fade">
+                  <article class="numbertext">3 / 3</article>
+                  <img src="slider/5.jpg">
+                </article>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                <article style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </article>
         </section>
-        <section class="call_to_action">
+        <section class="call_to_action" id="blanket">
             <article class="info">
                 <h3>Tilmeld dig til en prøvetræning her</h3>
             </article>
@@ -41,7 +64,18 @@
                 <input class="button" type="submit" name="btn" value="Klik her for at tilmelde dig">
             </form>
         </section>
-        <img src="træner1.jpg" alt="Træner" class="articlefoto">
+        <section class="vigtige_ord">
+            <article class="glade">
+                <img src="" alt="">
+                <h4>Glæde</h4>
+            </article>
+            <article class="sammenhold">
+                <h4>Sammenhold</h4>
+            </article>
+            <article class="felleskab">
+                <h4>Fællesskab</h4>
+            </article>
+        </section>
         <article class="info"> 
             <h3> Coach Martin "Egen UI er meget mere end bare fodbold</h3>
             <p>Her skal der være en artikle om Martin og hans syn på klubben. 
